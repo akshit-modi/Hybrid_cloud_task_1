@@ -1,0 +1,517 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 6px 70px;
+    box-sizing: border-box;
+    transition: .5s;
+    display: flex;
+}
+nav.black
+{
+    background: rgba(0,0,0,0.8);
+    height: 80px;
+    padding: 10px 50px;
+}
+nav .logo{
+    float: left;
+
+}
+nav .logo img{
+    height: 80px;
+    transition: .5s;
+}
+nav.black .logo img{
+    height: 60px;
+}
+nav ul.nav-links{
+    float: right;
+    margin: 15px;
+    padding-left: 40px;
+    display: flex;
+   
+}
+nav ul li{
+    list-style: none;
+    color: rgb(136, 20, 0);
+}
+nav ul li a{
+    list-style: 80px; 
+    padding: 2px 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+nav.black ul li a{
+    color: #fff;
+    
+}
+nav.black div ul li a{
+    color: black;
+}
+nav ul li a.active ,
+nav ul a:hover {
+    color:rgb(8, 8, 155);
+    background: rgb(235, 235, 235);
+}
+.fa{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display: none;
+    color: rgb(8, 8, 155);
+}
+nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(246, 246, 248);
+    margin-top:10px;
+    margin-left: -15px;
+}
+nav ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu-1 ul li{
+    width: 200px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.sub-menu-2
+{
+    display: none;
+    color: rgb(8, 8, 155);
+}
+nav ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background: rgb(246, 246, 248);
+    margin-top:10px;
+    margin-left: -15px;
+}
+nav ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu-2 ul li{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu-3
+{
+    display: none;
+    color: rgb(8, 8, 155);
+}
+nav ul li:hover .sub-menu-3{
+    display: block;
+    position: absolute;
+    background: rgb(246, 246, 248);
+    margin-top:10px;
+    margin-left: -15px;
+}
+nav ul li:hover .sub-menu-3 ul{
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu-3 ul li{
+    width: 200px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu-4
+{
+    display: none;
+    color:rgb(8, 8, 155);
+}
+nav ul li:hover .sub-menu-4{
+    display: block;
+    position: absolute;
+    background: rgb(246, 246, 248);
+    margin-top:10px;
+    margin-left: -15px;
+}
+nav ul li:hover .sub-menu-4 ul{
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu-4 ul li{
+    width: 100px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu-5
+{
+    display: none;
+    color: rgb(8, 8, 155);
+}
+nav ul li:hover .sub-menu-5{
+    display: block;
+    position: absolute;
+    background: rgb(246, 246, 248);
+    margin-top:10px;
+    margin-left: -15px;
+}
+nav ul li:hover .sub-menu-5 ul{
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu-5 ul li{
+    width: 200px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+section.sec1{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.banner2{
+    background-image: url(vgec_2.jpg);
+    z-index: -1;
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    background-image: url(vgec_3.jpg);
+    z-index: -1;
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    background-image: url(vgec_4.jpg);
+    z-index: -1;
+    animation: slide4 12s linear infinite;
+}
+.banner1{
+    background-image: url(vgec_college.png);
+    z-index: -1;
+    animation: slide1 12s linear infinite;
+}
+ .banner1, .banner2, .banner3, .banner4{
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    position: absolute;
+
+}
+section.sec1 img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+section.content
+{   margin-top: 0px;
+    padding: 70px;
+
+    position: relative;
+}
+section.visson
+{   
+    padding: 0 70px;
+}
+section.mission
+{
+    padding: 10px 70px;
+}
+section.content h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(8, 8, 155);
+    font-weight: bolder;
+}
+section.content p{
+    margin: 0;
+    padding: 0;
+    font-size: 1em; 
+}
+section.visson h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(8, 8, 155);
+    font-weight: bolder;
+}
+section.visson p{
+    margin: 0;
+    padding: 0;
+    font-size: 1em; 
+}
+section.mission h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(8, 8, 155);
+    font-weight: bolder;
+}
+section.mission p{
+    margin: 0;
+    padding: 0;
+    font-size: 1em; 
+}
+section.sec2{
+    margin: 0;
+    top: 0;
+    padding:0;
+    display: flex;
+    min-height: 40vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0;
+
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    padding: 40px;
+    background: linear-gradient(to bottom left,rgb(0, 99, 228), rgb(8, 8, 155));
+    box-shadow: 0 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.container .box::before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container .box .icon{
+    position: relative;
+    width: 30px;
+    height:30px;
+    color: #fff;
+    background: rgb(240, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 1s;
+    padding-left: 8px;
+}
+.container .box:nth-child(1) .icon{
+    box-shadow: 0 0 0 0rgb(80, 238, 80);
+    background: rgb(240, 60, 60);
+}
+.container .box:nth-child(1):hover {
+    background-image: url(nss.jpg);
+}
+.container .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0rgb(80, 238, 80);
+    background: rgb(240, 60, 60);
+}
+.container .box.two:hover {
+    background-image: url(event.jpg);
+}
+.container .box:nth-child(3) .icon{
+    box-shadow: 0 0 0 0rgb(80, 238, 80);
+    background: rgb(240, 60, 60);
+}
+.container .box.three:hover{
+    background-image: url(innnovation.jpg);
+}
+.container .box .content{
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.container .box:hover .content{
+    color: black;
+    font-weight: 700;
+}
+.container .box .content h3{
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 0;
+}
+.container .box .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(235, 235, 235);
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.container .box:hover .content a{
+   padding: 3px 8px;
+   border-radius: 8px;
+
+}
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(235, 235, 235);
+    margin: 5px;
+}
+
+/*
+@media only screen and (max-width: 1790px)
+{
+
+    
+    nav{
+        padding: 3px 40px; 
+    }
+    nav .logo img{
+        height: 70px;
+    }
+    nav ul.nav-links{
+        margin: 15px;
+        padding: 0;
+    }
+    nav ul li a{
+        list-style: 60px; 
+        padding: 3px 6px;
+    }
+
+}
+
+@media only screen and (max-width: 1600px){
+  
+    .nav-links{
+        position: absolute;
+        right: 5px;
+        left: 5px;
+        height: 50vh;
+        top: 100px;
+        width: 100%;
+    
+        background-color: rgb(246, 246, 248);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        margin-right: 0px;
+    }
+}
+*/
